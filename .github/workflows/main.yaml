@@ -82,6 +82,7 @@ jobs:
           POLYAPIURL: ${{ secrets.POLYAPIURL }}
           ENV_FILE: ${{ secrets.ENV_FILE }}
           TAG: ${{ needs.build.outputs.LATEST_TAG }}
+          POLYGON_ORACLE_PUBLIC: ${{ secrets.POLYGON_ORACLE_PUBLIC }}
         run: |
           echo -e "$CA_PEM" > ~/.docker/ca.pem
           echo -e "$CERT_PEM" > ~/.docker/cert.pem
