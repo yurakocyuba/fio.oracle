@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/js",
-    "dev": "cross-env MODE=development nodemon -r esm server.js"
+    "dev": "cross-env nodemon -r esm server.js",
+    "oracle": "node scripts/oracle.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,14 +18,14 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.0",
+    "@ethereumjs/common": "^2.6.5",
     "@fioprotocol/fiojs": "^1.0.1",
-    "@fioprotocol/fiosdk": "^1.2.1",
+    "@fioprotocol/fiosdk": "github:fioprotocol/fiosdk_typescript#release/1.8.x",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "dotenv-safe": "^8.2.0",
     "esm": "^3.2.25",
-    "ethereumjs-common": "^1.5.2",
     "ethereumjs-tx": "^2.1.2",
     "ethers": "^5.1.4",
     "express": "^4.17.1",
