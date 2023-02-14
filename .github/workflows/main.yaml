@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     outputs:
       PREVIOUS_TAG: ${{ steps.get-latest-tag.outputs.tag }}
       LATEST_TAG: ${{ steps.bump-semver.outputs.new_version }}
